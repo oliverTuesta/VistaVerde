@@ -76,6 +76,8 @@ public class GananciasView extends javax.swing.JFrame {
         tbClientes.getColumnModel().getColumn(6).setPreferredWidth(60);
         tbClientes.getColumnModel().getColumn(6).setMaxWidth(70);
         tbClientes.getColumnModel().getColumn(6).setCellRenderer(centerRenderer);
+        
+        tbClientes.setEnabled(false);
 
         //diseño
         JTableHeader header = tbClientes.getTableHeader();
