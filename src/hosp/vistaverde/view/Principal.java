@@ -33,30 +33,10 @@ public class Principal extends javax.swing.JFrame {
         setUndecorated(true);
         setIconImage(icono);
         initComponents();
-        
+        diseño();
         gananciasMes();
         
-        setLocationRelativeTo(null);
         
-        btnNuevoR.setBackground(Color.BLUE);
-
-        bannerSuperior.setBackground(naranja);
-        bannerSuperior.setOpaque(true);
-
-        fondoAmarillo.setBackground(amarillo);
-        fondoAmarillo.setOpaque(true);
-
-        fondoBlanco.setBackground(Color.white);
-        fondoBlanco.setOpaque(true);
-
-        //tamaño de jframe
-        setSize(1080, 720);
-
-        //boton transparente
-        btnCerrar.setContentAreaFilled(false);
-        btnCerrar.setFocusPainted(false);
-        //boton transparente
-
     }
 
     /**
@@ -275,6 +255,30 @@ public class Principal extends javax.swing.JFrame {
         
         txtGanancia.setText(bo.listarClienteFecha(null, c.getFechaActual())+"0");
         
+    }
+
+    private void diseño() {
+        setLocationRelativeTo(null);
+        
+        btnNuevoR.setBackground(Color.BLUE);
+
+        bannerSuperior.setBackground(naranja);
+        bannerSuperior.setOpaque(true);
+
+        fondoAmarillo.setBackground(amarillo);
+        fondoAmarillo.setOpaque(true);
+
+        fondoBlanco.setBackground(Color.white);
+        fondoBlanco.setOpaque(true);
+
+        //tamaño de jframe
+        setSize(1080, 720);
+
+        //boton transparente
+        btnCerrar.setContentAreaFilled(false);
+        btnCerrar.setFocusPainted(false);
+        //boton transparente
+
     }
 
 }
